@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animal Shelters</title>
+</head>
+
+<body style="background-color:rgb(211, 223, 226);">
+    <div>
+        <label for="timeline">Year: <span id="year"></span></label>
+        <input type="range" min="2014" max="2020" value="2014" step="1" id="timeline">
+        <br />
+        <select id="display">
+            <option value="capacity">Capacity</option>
+            <option value="rate">Rates</option>
+        </select>
+        <button onClick="window.location.reload();">Update</button>
+    </div>
+    <script type="module" src="{{url_for('static', filename='js/js.js')}}"></script>
+</body>
+
+</html>
